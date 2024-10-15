@@ -86,13 +86,14 @@ app.get("/get/all", async (req: Request, res: Response) => {
       offset: req.body.offset,
       order: [[req.body.orderKey, req.body.order]],
     });
+    console.log(req.body.offset);
     if (records) {
       res.json(records);
     } else {
-      res.status(404).json({ error: "Record not found" });
+      res.status(404).json({ error: "Record not found error" });
     }
   } catch (error) {
-    res.status(500).json({ error: "Internal Server Error" + error });
+    res.status(500).json({ error: "Internal Server Error" + error + "hide" });
   }
 });
 
