@@ -86,7 +86,6 @@ app.get("/get/all", async (req: Request, res: Response) => {
       offset: req.body.offset,
       order: [[req.body.orderKey, req.body.order]],
     });
-    console.log(req.body.offset);
     if (records) {
       res.json(records);
     } else {

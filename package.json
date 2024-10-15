@@ -11,7 +11,7 @@
   "name": "test",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "https://github.com/thanhtai303/expressjs.git",
+  "author": "thanhtai303 <168047056+thanhtai303@users.noreply.github.com>",
   "license": "MIT",
   "devDependencies": {
     "@types/express": "^5.0.0"
